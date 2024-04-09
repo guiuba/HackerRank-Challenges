@@ -56,3 +56,14 @@ Sample Output
 
 5 1 2 3 4
  */
+
+/*
+Another option:
+   List<Integer> rotatedArray = new ArrayList<>();
+        int len = arr.size();
+        int move = d % len;
+        System.out.println(move);
+        rotatedArray.addAll(arr.subList(move, len));
+        rotatedArray.addAll(arr.subList(0, move));
+        return rotatedArray;
+ */
